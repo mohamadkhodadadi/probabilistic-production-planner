@@ -23,7 +23,7 @@ It considers:
 ## 🚀 Technologies Used
 
 - HTML5 + CSS3
-- Vanilla JavaScript (no libraries!)
+- JavaScript (no libraries!)
 - Dynamic Programming
 - Binomial Distribution (Probabilistic Modeling)
 
