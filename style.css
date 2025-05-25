@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #172554;
+}
+
+body {
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  grid-template-columns: 350px auto;
+  grid-template-rows: 80px auto;
+  grid-template-areas: "navbar navbar" "sidebar content";
+  background-color: #eee;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: navbar;
+  border-bottom: 1px solid #2563eb;
+}
+.sidebar {
+  width: 100%;
+  border-right: 1px solid #2563eb;
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+  gap: 5px;
+}
+.content {
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  margin: 10px;
+  width: 90%;
+  border: 1px solid #2563eb;
+  border-collapse: collapse;
+}
+th,
+tr,
+td {
+  width: 100px;
+  border: 1px solid #2563eb;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+input[type="number"],
+button {
+  font-size: 1.2rem;
+  padding: 2px 3px;
+  border-radius: 6px;
+  transition: 0.4s all ease;
+}
+input {
+  background-color: #eee;
+  border: 1px solid #2563eb;
+}
+input:hover {
+  background-color: #fff;
+}
+button {
+  color: #f8fafc;
+}
+label {
+  display: flex;
+  justify-content: space-between;
+}
+#submit {
+  background-color: #3b82f6;
+  border: 1px solid #2563eb;
+}
+#submit:hover {
+  background-color: #2563eb;
+}
+#destroy {
+  background-color: #f59e0b;
+  border: 1px solid #92400e;
+}
+#destroy:hover {
+  background-color: #d97706;
+}
+#back {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: #f43f5e;
+  border: 1px solid #be123c;
+  transition: 0.4s all ease;
+}
+
+#back:hover {
+  background-color: #e11d48;
+}
+
+@media screen and (max-width: 850px) {
+  input[type="number"],
+  button,
+  #back,
+  label {
+    width: 350px;
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .sidebar {
+    align-items: center;
+  }
+  body {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+  }
+}
