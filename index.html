@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Probabilistic Production Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Probabilistic Production Planner</h1>
+    </div>
+    <div class="sidebar">
+      <input type="number" id="orderPrice" placeholder="Order Value" />
+      <input type="number" id="time" placeholder="Available Production Days" />
+      <input type="number" id="orderSize" placeholder="Order Quantity" />
+      <input type="number" id="costPerItem" placeholder="Cost per Unit" />
+
+      <input
+        type="number"
+        id="costPerLaunch"
+        placeholder="Setup Cost per Batch"
+      />
+      <label for="winPossibility">
+        <span>Quality Approval Probability</span>
+        <input type="range" id="winPossibility" min="1" max="99" />
+        <span id="winValue"></span>
+      </label>
+      <label for="hardcore">
+        <span>All units must be produced</span>
+        <input type="checkbox" id="hardcore" />
+      </label>
+      <button id="submit">Generate Plan</button>
+      <a id="back" href="/">Back</a>
+    </div>
+    <div class="content">
+      <table id="table"></table>
+    </div>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
