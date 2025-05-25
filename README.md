@@ -31,7 +31,7 @@ It considers:
 
 ## 📷 Demo
 
-![App Screenshot](demo.gif) <!-- Optional: Replace with a real screenshot or remove this section -->
+![App Screenshot](demo.png) <!-- Optional: Replace with a real screenshot or remove this section -->
 
 ---
 
@@ -41,8 +41,8 @@ It considers:
 ```bash
 git clone https://github.com/your-username/probabilistic-production-planner.git
 ```
-2. Open index.html in your browser.
+2. Open ```index.html``` in your browser.
 
-🔗 Connect with Me
+## 🔗 Connect with Me
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohamad.m.khoda03@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-mahdi-khodadadi)
